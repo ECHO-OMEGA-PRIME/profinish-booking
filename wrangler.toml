@@ -18,3 +18,7 @@ WORKER_VERSION = "1.1.0"
 ADAM_PHONE = "+14322693446"
 PROFINISH_PHONE = "+14322192586"
 OWNER_EMAIL = "adam@profinishusa.com"
+
+[[analytics_engine_datasets]]
+binding = "ANALYTICS"
+dataset = "echo_metrics"
