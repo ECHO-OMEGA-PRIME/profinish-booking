@@ -68,6 +68,11 @@ export default {
     const path = url.pathname;
 
     try {
+      // Root
+      if (path === '/') {
+        return json({ service: 'profinish-booking', status: 'operational' });
+      }
+
       // Health
       if (path === '/health') {
         const memCount = await env.DB.prepare('SELECT COUNT(*) as cnt FROM customer_memory').first<{ cnt: number }>();
